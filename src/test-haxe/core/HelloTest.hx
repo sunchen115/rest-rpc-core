@@ -1,10 +1,12 @@
 package core;
 
 import haxe.unit.TestCase;
+
 class HelloTest extends TestCase
 {
-  public function testHello()
+
+    public function testGetMessage()
     {
-        assertTrue(true);
+        assertEquals(new Hello().getMessage(), "Hello" );
     }
 }

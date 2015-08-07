@@ -2,11 +2,13 @@ package core;
 import haxe.ds.Vector;
 class Hello
 {
-  public static function getMessage(){
+  public function new() {}
+
+  public  function getMessage(){
     return "Hello";
   }
   public static function main(args:Vector<String>)
   {
-    trace(getMessage()+",World!");
+    trace(new Hello().getMessage()+",World!");
   }
 }
